@@ -5,9 +5,10 @@ public class DeleteBall : MonoBehaviour
 {
 	void OnCollisionEnter (Collision col)
 	{
-		if(col.gameObject.name == "Table")
+
+		if(col.gameObject.name == "Sphere")
 		{
-			Destroy(this.gameObject);
+			Destroy(col.gameObject);
 		}
 	}
 }

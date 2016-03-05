@@ -112,6 +112,7 @@
 'Assets/DestroyBall.cs'
 'Assets/GyroscopeEnable.cs'
 'Assets/MessageManager.cs'
+'Assets/MoveBall.cs'
 'Assets/Myo Samples/Scripts/ColorBoxByPose.cs'
 'Assets/Myo Samples/Scripts/JointOrientation.cs'
 'Assets/Myo Samples/Scripts/SampleSceneGUI.cs'

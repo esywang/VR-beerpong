@@ -5,9 +5,9 @@ public class destroyCup : MonoBehaviour
 {
 	void OnCollisionEnter (Collision col)
 	{
-		if(col.gameObject.name == "Sphere")
+		if(col.gameObject.name == "Torus")
 		{
-			Destroy(this.gameObject);
+			Destroy(col.gameObject);
 		}
 	}
 }

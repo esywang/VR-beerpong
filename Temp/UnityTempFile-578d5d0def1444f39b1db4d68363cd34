@@ -74,6 +74,7 @@
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
+'Assets/Cardboard/DemoScene/DeleteBall.cs'
 'Assets/Cardboard/DemoScene/FPS.cs'
 'Assets/Cardboard/DemoScene/MyoGenadeThrower.cs'
 'Assets/Cardboard/DemoScene/Teleport.cs'
@@ -111,6 +112,7 @@
 'Assets/DestroyBall.cs'
 'Assets/GyroscopeEnable.cs'
 'Assets/MessageManager.cs'
+'Assets/MoveBall.cs'
 'Assets/Myo Samples/Scripts/ColorBoxByPose.cs'
 'Assets/Myo Samples/Scripts/JointOrientation.cs'
 'Assets/Myo Samples/Scripts/SampleSceneGUI.cs'

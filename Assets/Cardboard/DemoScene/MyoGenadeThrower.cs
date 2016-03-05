@@ -104,7 +104,7 @@ public class MyoGenadeThrower : MonoBehaviour
 		float roll = rotation.z;
 		float pitch = rotation.x;
 		float yaw = rotation.y;
-		Debug.Log("roll" + roll + "pitch" + pitch + "yaw" + yaw);
+		//Debug.Log("roll" + roll + "pitch" + pitch + "yaw" + yaw);
 		return (rollAMin <= roll && rollAMax >= roll) &&
 			(yawAMin <= yaw && yawAMax >= yaw) &
 			(pitchAMin <= pitch && pitchAMax >= pitch);
@@ -113,12 +113,10 @@ public class MyoGenadeThrower : MonoBehaviour
 	private void throwGrenade()
 	{
 		var grenade = (GameObject)Object.Instantiate(GrenadePrefab) as GameObject;
-		grenade.AddComponent<DeleteBall> ();
 		grenade.transform.position = transform.position;
 		grenade.transform.rotation = transform.rotation;
 		Rigidbody gameObjectsRigidBody = grenade.AddComponent<Rigidbody>();
-		gameObjectsRigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
-
+//		gameObjectsRigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 
 		Vector3 direction = transform.root.forward;
 		direction.y += 1;
@@ -129,8 +127,12 @@ public class MyoGenadeThrower : MonoBehaviour
 
 		Debug.Log("timeDiff= " + timeDiff + " throwStrength=" + throwStrength);
 		throwStrength = Mathf.Clamp(throwStrength, minThrowStrength, maxThrowStrength);
+		int number = Random.Range(1,5);
+		throwStrength += number;
 
 		grenade.GetComponent<Rigidbody>().AddForce(direction * throwStrength, ForceMode.Impulse);
 		grenade.GetComponent<Rigidbody>().AddTorque(Random.insideUnitSphere, ForceMode.Impulse);
+		Destroy (grenade, 1.5f);
+
 	}
 }
