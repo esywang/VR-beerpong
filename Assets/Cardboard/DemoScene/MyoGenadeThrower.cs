@@ -116,7 +116,6 @@ public class MyoGenadeThrower : MonoBehaviour
 		grenade.transform.position = transform.position;
 		grenade.transform.rotation = transform.rotation;
 		Rigidbody rigid = grenade.AddComponent<Rigidbody> ();
-		rigid.mass = 5;
 
 		Vector3 direction = transform.root.forward;
 		direction.y += 1;

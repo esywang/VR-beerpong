@@ -76,6 +76,10 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
+     <Compile Include="Assets\DataReceiver.cs" />
+     <Compile Include="Assets\DataSender.cs" />
+     <Compile Include="Assets\GyroscopeEnable.cs" />
+     <Compile Include="Assets\MessageManager.cs" />
      <Compile Include="Assets\Myo Samples\Scripts\ColorBoxByPose.cs" />
      <Compile Include="Assets\Myo Samples\Scripts\JointOrientation.cs" />
      <Compile Include="Assets\Myo Samples\Scripts\SampleSceneGUI.cs" />
@@ -89,6 +93,10 @@
      <Compile Include="Assets\Myo\Scripts\Myo.NET\libmyo.cs" />
      <Compile Include="Assets\Myo\Scripts\ThalmicHub.cs" />
      <Compile Include="Assets\Myo\Scripts\ThalmicMyo.cs" />
+     <Compile Include="Assets\RemoteConnection.cs" />
+     <Compile Include="Assets\ScreenStream.cs" />
+     <Compile Include="Assets\Utils.cs" />
+     <Compile Include="Assets\WebCamStreamer.cs" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
      <None Include="Assets\Cardboard\Resources\UnlitTexture.shader" />
