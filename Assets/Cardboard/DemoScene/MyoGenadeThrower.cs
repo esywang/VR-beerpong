@@ -104,18 +104,21 @@ public class MyoGenadeThrower : MonoBehaviour
 		float roll = rotation.z;
 		float pitch = rotation.x;
 		float yaw = rotation.y;
-//		Debug.Log("roll" + roll + "pitch" + pitch + "yaw" + yaw);
+		Debug.Log("roll" + roll + "pitch" + pitch + "yaw" + yaw);
 		return (rollAMin <= roll && rollAMax >= roll) &&
-			(yawAMin <= yaw && yawAMax >= yaw) &&
+			(yawAMin <= yaw && yawAMax >= yaw) &
 			(pitchAMin <= pitch && pitchAMax >= pitch);
 	}
 
 	private void throwGrenade()
 	{
-		GameObject grenade = (GameObject)Object.Instantiate(GrenadePrefab);
+		var grenade = (GameObject)Object.Instantiate(GrenadePrefab) as GameObject;
+		grenade.AddComponent<DeleteBall> ();
 		grenade.transform.position = transform.position;
 		grenade.transform.rotation = transform.rotation;
-		Rigidbody rigid = grenade.AddComponent<Rigidbody> ();
+		Rigidbody gameObjectsRigidBody = grenade.AddComponent<Rigidbody>();
+		gameObjectsRigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+
 
 		Vector3 direction = transform.root.forward;
 		direction.y += 1;
