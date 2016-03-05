@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{1366EEFB-BA51-7F36-390E-E88D92DAD8C8}") = "VR-Beerpong", "Assembly-CSharp.csproj", "{E8E129A5-CA4F-607E-55E7-CD0171226B08}"
+EndProject
+Project("{1366EEFB-BA51-7F36-390E-E88D92DAD8C8}") = "VR-Beerpong", "Assembly-CSharp-Editor.csproj", "{4FB9DF96-88F9-4756-C719-A7DFBC646BB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8E129A5-CA4F-607E-55E7-CD0171226B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E129A5-CA4F-607E-55E7-CD0171226B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E129A5-CA4F-607E-55E7-CD0171226B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E129A5-CA4F-607E-55E7-CD0171226B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB9DF96-88F9-4756-C719-A7DFBC646BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB9DF96-88F9-4756-C719-A7DFBC646BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB9DF96-88F9-4756-C719-A7DFBC646BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB9DF96-88F9-4756-C719-A7DFBC646BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
