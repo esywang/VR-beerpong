@@ -72,7 +72,7 @@ public class UnityEditorDevice : BaseVRDevice {
 
   public override void UpdateState() {
     Quaternion rot;
-    if (Cardboard.SDK.UseUnityRemoteInput && RemoteCommunicating) {
+    if (RemoteCommunicating) {
       var att = Input.gyro.attitude * initialRotation;
       att = new Quaternion(att.x, att.y, -att.z, -att.w);
       rot = Quaternion.Euler(90, 0, 0) * att;

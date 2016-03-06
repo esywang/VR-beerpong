@@ -45,8 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Cardboard\DemoScene\DeleteBall.cs" />
      <Compile Include="Assets\Cardboard\DemoScene\FPS.cs" />
+     <Compile Include="Assets\Cardboard\DemoScene\MyoGenadeThrower.cs" />
      <Compile Include="Assets\Cardboard\DemoScene\Teleport.cs" />
+     <Compile Include="Assets\Cardboard\DemoScene\destroyCup.cs" />
      <Compile Include="Assets\Cardboard\Legacy\DemoScene\TeleportLegacyUI.cs" />
      <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUI.cs" />
      <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUIMouse.cs" />
@@ -75,10 +78,34 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
+     <Compile Include="Assets\DataReceiver.cs" />
+     <Compile Include="Assets\DataSender.cs" />
+     <Compile Include="Assets\DestroyBall.cs" />
+     <Compile Include="Assets\GyroscopeEnable.cs" />
+     <Compile Include="Assets\MessageManager.cs" />
+     <Compile Include="Assets\MoveBall.cs" />
+     <Compile Include="Assets\Myo Samples\Scripts\ColorBoxByPose.cs" />
+     <Compile Include="Assets\Myo Samples\Scripts\JointOrientation.cs" />
+     <Compile Include="Assets\Myo Samples\Scripts\SampleSceneGUI.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\EventTypes.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Hub.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Myo.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Pose.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Quaternion.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Vector3.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\libmyo.cs" />
+     <Compile Include="Assets\Myo\Scripts\ThalmicHub.cs" />
+     <Compile Include="Assets\Myo\Scripts\ThalmicMyo.cs" />
+     <Compile Include="Assets\RemoteConnection.cs" />
+     <Compile Include="Assets\ScreenStream.cs" />
+     <Compile Include="Assets\Utils.cs" />
+     <Compile Include="Assets\WebCamStreamer.cs" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
      <None Include="Assets\Cardboard\Resources\UnlitTexture.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Myo\README-MyoUnity.txt" />
      <None Include="Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
      <None Include="Assets\Cardboard\Resources\SolidColor.shader" />
  <Reference Include="UnityEngine.Networking">
